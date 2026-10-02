@@ -5,7 +5,7 @@
 - Source: https://github.com/haider484991/lumen-nextjs-photography-template
 - Copyright (c) 2026 Pixel & Oak
 - License: MIT. Full license: `assets/vendor/lumen.LICENSE`.
-- Reused: masonry CSS from `app/globals.css`, adapted into `style.css`. The magazine layout, project links, and colored mobile-image backgrounds are customized for this site.
+- The earlier gallery used adapted masonry CSS from `app/globals.css`. The current layout uses custom CSS; the original license is retained.
 
 ## Previous template
 
