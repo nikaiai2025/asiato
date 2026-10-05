@@ -92,11 +92,13 @@ h1 { font-size: clamp(48px, 6.5vw, 92px); font-weight: 900; line-height: 1.3; le
 .experiment-wall > :nth-child(3) { grid-column: 3 / span 4; grid-row: 2; }
 .experiment-wall > :nth-child(4) { grid-column: 9 / span 4; grid-row: 2; margin-top: 88px; }
 .experiment-wall > :nth-child(5) { grid-column: 2 / span 6; grid-row: 3; margin-top: 8px; }
+.experiment-wall > :nth-child(6) { grid-column: 9 / span 4; grid-row: 3; margin-top: 62px; }
 .experiment-wall[data-layout="b"] > :nth-child(1) { grid-column: 2 / span 4; }
 .experiment-wall[data-layout="b"] > :nth-child(2) { grid-column: 7 / span 6; margin-top: 58px; }
 .experiment-wall[data-layout="b"] > :nth-child(3) { grid-column: 1 / span 5; margin-top: 46px; }
 .experiment-wall[data-layout="b"] > :nth-child(4) { grid-column: 8 / span 4; margin-top: 0; }
 .experiment-wall[data-layout="b"] > :nth-child(5) { grid-column: 5 / span 6; }
+.experiment-wall[data-layout="b"] > :nth-child(6) { grid-column: 1 / span 4; grid-row: 3; margin-top: 56px; }
 .experiment-wall .project-copy h3 { font-size: 20px; }
 footer { display: flex; align-items: center; gap: 8px; margin-top: 100px; padding: 30px 0; color: var(--muted); font-size: 12px; }
 .footer-mark { font-size: 16px; filter: grayscale(1); }
