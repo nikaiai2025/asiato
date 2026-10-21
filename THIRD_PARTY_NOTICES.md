@@ -11,6 +11,13 @@
 
 The unused `assets/vendor/portfolio-template.css` is retained with its MIT license in `assets/vendor/portfolio-template.LICENSE`. Copyright (c) 2021 Nick Culbertson. Source: https://github.com/NickCulbertson/Simple-HTML-Portfolio-Template . It is not loaded by the current page.
 
+## Phosphor Icons
+
+- Source: https://github.com/phosphor-icons/core
+- Copyright (c) 2023 Phosphor Icons
+- License: MIT. Full license: `assets/vendor/phosphor-icons.LICENSE`.
+- The bold `arrow-up-right` path is inlined in `index.html`.
+
 ## Discord symbol
 
 The Discord symbol belongs to Discord Inc. Source: https://discord.com/branding . Used unchanged to identify the Discord platform for eddi-keyword-notifier. It is not the bot's own logo. Discord assets are not covered by the template's MIT license.

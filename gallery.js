@@ -1,4 +1,4 @@
-// Choose order and composition once, preserving each section while the page is in use.
+// Choose the order once per visit, so no work stays in front.
 function shuffle(items) {
   for (let i = items.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
@@ -6,47 +6,43 @@ function shuffle(items) {
   }
   return items;
 }
-document.querySelectorAll('.project-wall, .experiment-wall').forEach(wall => {
-  const cards = shuffle([...wall.children]);
-  wall.dataset.layout = Math.random() < .5 ? 'a' : 'b';
-  cards.forEach(card => wall.append(card));
-  if (wall.classList.contains('project-wall')) {
-    cards.slice(0, 2).forEach(card => {
-      const image = card.querySelector('img');
-      if (image) {
-        image.loading = 'eager';
-        image.fetchPriority = 'high';
-      }
-    });
-  }
+const deck = document.querySelector('.deck');
+const labList = document.querySelector('.lab-list');
+[deck, labList].forEach(list => shuffle([...list.children]).forEach(item => list.append(item)));
+deck.querySelectorAll('li:nth-child(-n+2) img').forEach(image => {
+  image.loading = 'eager';
+  image.fetchPriority = 'high';
 });
-const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
-const cards = [...document.querySelectorAll('.project-card')];
-if ('IntersectionObserver' in window && !reducedMotion.matches) {
-  function reveal(card) {
-    if (card.dataset.reveal !== 'pending') return;
-    const wall = card.parentElement;
-    const pairPosition = [...wall.children].indexOf(card) % 2;
-    card.style.setProperty('--reveal-delay', `${pairPosition * 70}ms`);
-    card.dataset.reveal = 'visible';
-    observer.unobserve(card);
-  }
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) reveal(entry.target);
-    });
-  }, { rootMargin: '0px 0px -32px 0px', threshold: 0.08 });
-  cards.forEach(card => {
-    card.dataset.reveal = 'pending';
-    observer.observe(card);
-  });
-  document.addEventListener('focusin', event => {
-    const card = event.target.closest('.project-card');
-    if (card) reveal(card);
-  });
-  reducedMotion.addEventListener('change', event => {
-    if (!event.matches) return;
-    observer.disconnect();
-    cards.forEach(card => card.removeAttribute('data-reveal'));
+
+// Each card shrinks back while the next card slides over it.
+const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+if (!reducedMotion && CSS.supports('animation-timeline: view()')) {
+  const cards = [...deck.children];
+  deck.style.setProperty('timeline-scope', cards.map((_, i) => `--card-${i}`).join(', '));
+  cards.forEach((card, i) => {
+    card.style.setProperty('view-timeline', `--card-${i} block`);
+    if (i === 0) return;
+    const covered = cards[i - 1].querySelector('.work');
+    covered.style.setProperty('--tl', `--card-${i}`);
+    covered.dataset.tuck = '';
   });
 }
+
+// With a fine pointer, the hovered or focused row fills one large preview.
+const lab = document.querySelector('.lab');
+const preview = document.createElement('div');
+preview.className = 'lab-preview';
+preview.setAttribute('aria-hidden', 'true');
+const rows = [...labList.querySelectorAll('.lab-item')];
+const frames = rows.map(row => preview.appendChild(row.querySelector('.thumb').cloneNode(true)));
+function activate(index) {
+  rows.forEach((row, i) => row.toggleAttribute('data-active', i === index));
+  frames.forEach((frame, i) => frame.toggleAttribute('data-active', i === index));
+}
+rows.forEach((row, i) => {
+  row.addEventListener('pointerenter', () => activate(i));
+  row.addEventListener('focus', () => activate(i));
+});
+lab.append(preview);
+lab.classList.add('has-preview');
+activate(0);

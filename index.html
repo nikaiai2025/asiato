@@ -3,61 +3,110 @@
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>シカの足跡🐾 | shika</title>
 <meta name="description" content="shikaの自作ゲームとツールをまとめたページ。">
-<meta name="theme-color" content="#dce6ea" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#18262e" media="(prefers-color-scheme: dark)">
-<link rel="stylesheet" href="style.css?v=20261006-2">
+<meta name="theme-color" content="#eceee8" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1411" media="(prefers-color-scheme: dark)">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="style.css?v=20261021-2">
 </head><body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+ <symbol id="hoof" viewBox="0 0 24 24"><path d="M10.6 1.8C7.4 4.6 3.6 10.2 3.4 15.4c-.1 3.9 2.4 6.6 5.6 6.8 1 .1 1.6-.5 1.6-1.4L11.2 2.4c0-.6-.3-.9-.6-.6z"/><path d="M13.4 1.8c3.2 2.8 7 8.4 7.2 13.6.1 3.9-2.4 6.6-5.6 6.8-1 .1-1.6-.5-1.6-1.4L12.8 2.4c0-.6.3-.9.6-.6z"/></symbol>
+ <symbol id="arrow" viewBox="0 0 256 256"><path d="M204,64V168a12,12,0,0,1-24,0V93L72.49,200.49a12,12,0,0,1-17-17L163,76H88a12,12,0,0,1,0-24H192A12,12,0,0,1,204,64Z"/></symbol>
+</svg>
 <a class="skip-link" href="#works">作品へ</a>
 <div class="page">
-<div class="topline"><span class="maker">shika</span><nav aria-label="ページ内と制作者へのリンク"><a href="#works">作品</a><a href="#experiments">試作</a><a class="social-link" href="https://x.com/shika_bakudan" target="_blank" rel="noopener noreferrer">X ↗</a></nav></div>
-<header class="site-header">
- <div class="masthead"><h1>シカの<span>足跡</span><span class="title-paw">🐾</span></h1><p>自作のゲームとツールをまとめています。</p></div>
+<header class="topbar">
+ <span class="brand"><svg aria-hidden="true"><use href="#hoof"/></svg>shika</span>
+ <nav aria-label="ページ内と制作者へのリンク"><a href="#works">作品</a><a href="#experiments">試作</a><a href="https://x.com/shika_bakudan" target="_blank" rel="noopener noreferrer">X<svg aria-hidden="true"><use href="#arrow"/></svg></a></nav>
 </header>
+<div class="hero">
+ <h1 class="title"><span class="sr-only">シカの足跡</span><span aria-hidden="true"><span style="--n:0">シ</span><span style="--n:1">カ</span><span style="--n:2">の</span><span style="--n:3">足</span><span style="--n:4">跡</span></span></h1>
+ <div class="hero-foot">
+  <p class="lead">自作のゲームとツールを<br>まとめています。</p>
+  <svg class="trail" viewBox="0 0 320 420" aria-hidden="true">
+   <g transform="translate(78.1 4.6) rotate(104.9)"><use href="#hoof" width="46" height="46" x="-23" y="-23" style="--n:0"/></g>
+   <g transform="translate(137.2 57.4) rotate(129.1)"><use href="#hoof" width="46" height="46" x="-23" y="-23" style="--n:1"/></g>
+   <g transform="translate(199.7 105.7) rotate(162.8)"><use href="#hoof" width="46" height="46" x="-23" y="-23" style="--n:2"/></g>
+   <g transform="translate(169.1 180.3) rotate(202.6)"><use href="#hoof" width="46" height="46" x="-23" y="-23" style="--n:3"/></g>
+   <g transform="translate(169.6 259.6) rotate(183.8)"><use href="#hoof" width="46" height="46" x="-23" y="-23" style="--n:4"/></g>
+   <g transform="translate(158.6 337.9) rotate(159.0)"><use href="#hoof" width="46" height="46" x="-23" y="-23" style="--n:5"/></g>
+   <g transform="translate(225.2 382.6) rotate(123.4)"><use href="#hoof" width="46" height="46" x="-23" y="-23" style="--n:6"/></g>
+  </svg>
+ </div>
+</div>
 <main>
-<section id="works" aria-labelledby="works-title">
- <div class="section-head"><h2 id="works-title">作品</h2><span class="section-count">5つ</span></div>
- <div class="project-wall"><a aria-labelledby="project-1" class="project-card boxing-card" href="https://roboxing.shika.workers.dev/" target="_blank" rel="noopener noreferrer">
-  <div class="image-mat boxing phone"><img src="assets/images/roboxing.png" alt="roBOXING" loading="lazy" width="585" height="1266"></div>
-  <div class="project-copy"><div class="project-heading"><h3 id="project-1">roBOXING</h3><span class="open-mark" aria-hidden="true">↗</span></div><p>選手視点で遊ぶスマホ向け3Dボクシング。</p><div class="project-meta"><span>ボクシング</span><span class="mobile-badge">スマホ対応</span></div></div>
- </a><a aria-labelledby="project-2" class="project-card mahjong-card" href="https://mortal-jan.shika.workers.dev/" target="_blank" rel="noopener noreferrer">
-  <div class="image-mat mahjong"><img src="assets/images/mortal-jan.png" alt="もーたる何切る教室" loading="lazy" width="1200" height="630"></div>
-  <div class="project-copy"><div class="project-heading"><h3 id="project-2">もーたる何切る教室</h3><span class="open-mark" aria-hidden="true">↗</span></div><p>麻雀AIが採点してくれる何切る問題。全1万問。</p><div class="project-meta"><span>何切る</span></div></div>
- </a><a aria-labelledby="project-3" class="project-card duel-card" href="https://nikaiai.itch.io/duel-cards" target="_blank" rel="noopener noreferrer">
-  <div class="image-mat duel phone"><img src="assets/images/duel-cards.png" alt="Duel Cards" loading="lazy" width="660" height="1175"></div>
-  <div class="project-copy"><div class="project-heading"><h3 id="project-3">Duel Cards</h3><span class="open-mark" aria-hidden="true">↗</span></div><p>トランプで戦う1対1のカードゲーム。</p><div class="project-meta"><span>カードゲーム</span><span class="mobile-badge">スマホ対応</span></div></div>
- </a><a aria-labelledby="project-5" class="project-card board-card" href="https://battle-board.shika.workers.dev/" target="_blank" rel="noopener noreferrer">
-  <div class="image-mat board"><img src="assets/images/bot-channel.jpg" alt="ボットちゃんねる" loading="lazy" width="1265" height="712"></div>
-  <div class="project-copy"><div class="project-heading"><h3 id="project-5">ボットちゃんねる</h3><span class="open-mark" aria-hidden="true">↗</span></div><p>人間とBOTが書き込む掲示板。コマンドやAIで遊べます。</p><div class="project-meta"><span>掲示板</span></div></div>
- </a><a aria-labelledby="project-12" class="project-card sfx-shelf-card" href="https://sfx-shelf.info907366.chatgpt.site/" target="_blank" rel="noopener noreferrer">
-  <div class="image-mat sfx-shelf"><img src="assets/images/sfx-shelf.png" alt="SFX Shelfの効果音検索と試聴画面" loading="lazy" width="1440" height="1000"></div>
-  <div class="project-copy"><div class="project-heading"><h3 id="project-12">SFX Shelf</h3><span class="open-mark" aria-hidden="true">↗</span></div><p>用途や音色から探して試聴できる、1,596音の効果音ライブラリ。</p><div class="project-meta"><span>効果音ライブラリ</span><span>WAVダウンロード</span></div></div>
- </a></div>
+<section id="works" class="works" aria-labelledby="works-title">
+ <div class="section-head"><h2 id="works-title">作品</h2><span class="count">5</span></div>
+ <ol class="deck">
+  <li><a aria-labelledby="project-1" class="work" style="--c:#3d55b8" href="https://roboxing.shika.workers.dev/" target="_blank" rel="noopener noreferrer">
+   <div class="work-text"><h3 id="project-1">roBOXING</h3><p>選手視点で遊ぶスマホ向け3Dボクシング。</p><div class="tags"><span>ボクシング</span><span class="tag-solid">スマホ対応</span></div><span class="go" aria-hidden="true"><svg><use href="#arrow"/></svg></span></div>
+   <div class="stage stage-phone"><img src="assets/images/roboxing.png" alt="roBOXING" loading="lazy" width="585" height="1266"></div>
+  </a></li>
+  <li><a aria-labelledby="project-2" class="work" style="--c:#2c6f6c" href="https://mortal-jan.shika.workers.dev/" target="_blank" rel="noopener noreferrer">
+   <div class="work-text"><h3 id="project-2">もーたる<wbr>何切る教室</h3><p>麻雀AIが採点してくれる何切る問題。全1万問。</p><div class="tags"><span>何切る</span></div><span class="go" aria-hidden="true"><svg><use href="#arrow"/></svg></span></div>
+   <div class="stage stage-card"><img src="assets/images/mortal-jan.png" alt="もーたる何切る教室" loading="lazy" width="1200" height="630"></div>
+  </a></li>
+  <li><a aria-labelledby="project-3" class="work" style="--c:#5b3f6e" href="https://nikaiai.itch.io/duel-cards" target="_blank" rel="noopener noreferrer">
+   <div class="work-text"><h3 id="project-3">Duel Cards</h3><p>トランプで戦う1対1のカードゲーム。</p><div class="tags"><span>カードゲーム</span><span class="tag-solid">スマホ対応</span></div><span class="go" aria-hidden="true"><svg><use href="#arrow"/></svg></span></div>
+   <div class="stage stage-phone"><img src="assets/images/duel-cards.png" alt="Duel Cards" loading="lazy" width="660" height="1175"></div>
+  </a></li>
+  <li><a aria-labelledby="project-5" class="work" style="--c:#e2b23c;--on:#141b17" href="https://battle-board.shika.workers.dev/" target="_blank" rel="noopener noreferrer">
+   <div class="work-text"><h3 id="project-5">ボット<wbr>ちゃんねる</h3><p>人間とBOTが書き込む掲示板。コマンドやAIで遊べます。</p><div class="tags"><span>掲示板</span></div><span class="go" aria-hidden="true"><svg><use href="#arrow"/></svg></span></div>
+   <div class="stage stage-window"><img src="assets/images/bot-channel.jpg" alt="ボットちゃんねる" loading="lazy" width="1265" height="712"></div>
+  </a></li>
+  <li><a aria-labelledby="project-12" class="work" style="--c:#c8411f" href="https://sfx-shelf.info907366.chatgpt.site/" target="_blank" rel="noopener noreferrer">
+   <div class="work-text"><h3 id="project-12">SFX Shelf</h3><p>用途や音色から探して試聴できる、1,596音の効果音ライブラリ。</p><div class="tags"><span>効果音ライブラリ</span><span>WAVダウンロード</span></div><span class="go" aria-hidden="true"><svg><use href="#arrow"/></svg></span></div>
+   <div class="stage stage-window"><img src="assets/images/sfx-shelf.png" alt="SFX Shelfの効果音検索と試聴画面" loading="lazy" width="1440" height="1000"></div>
+  </a></li>
+ </ol>
 </section>
 <section id="experiments" class="experiments" aria-labelledby="experiments-title">
- <div class="section-head"><h2 id="experiments-title">試作</h2><span class="section-count">7つ</span></div>
- <div class="experiment-wall"><a aria-labelledby="project-9" class="project-card mofumofu-card" href="mofumofu/" target="_blank" rel="noopener noreferrer">
-  <div class="image-mat mofumofu"><img src="assets/images/mofumofu-garden.jpg" alt="もふもふのキャラが歩き回る広場" loading="lazy" width="1013" height="500"></div>
-  <div class="project-copy"><div class="project-heading"><h3 id="project-9">もふもふ広場</h3><span class="open-mark" aria-hidden="true">↗</span></div><p>もふもふのキャラが歩き回り、混み合うとバトルする箱庭。</p><div class="project-meta"><span>箱庭</span></div></div>
- </a><a aria-labelledby="project-4" class="project-card gacha-card" href="https://nikaiai2025.github.io/gacha-simulator/" target="_blank" rel="noopener noreferrer">
-  <div class="image-mat gacha"><img src="assets/images/gacha.jpg" alt="ガチャ確率シミュレータ" loading="lazy" width="1265" height="712"></div>
-  <div class="project-copy"><div class="project-heading"><h3 id="project-4">ガチャ確率シミュレータ</h3><span class="open-mark" aria-hidden="true">↗</span></div><p>天井や確率アップも含めて、ガチャの当たり回数をグラフで確認。</p><div class="project-meta"><span>ガチャ</span></div></div>
- </a><a aria-labelledby="project-6" class="project-card discord-card" href="https://discord.com/oauth2/authorize?client_id=1522262919054622730&amp;permissions=3072&amp;integration_type=0&amp;scope=bot+applications.commands" target="_blank" rel="noopener noreferrer">
-  <div class="image-mat discord"><img src="assets/images/discord-symbol.svg" alt="eddi-keyword-notifier" loading="lazy"></div>
-  <div class="project-copy"><div class="project-heading"><h3 id="project-6">eddi-keyword-notifier</h3><span class="open-mark" aria-hidden="true">↗</span></div><p>エッヂの新着スレをキーワードでDiscordに通知。</p><div class="project-meta"><span>Discord</span></div></div>
- </a><a aria-labelledby="project-7" class="project-card aurora-card" href="https://aurora-grand.info907366.chatgpt.site/" target="_blank" rel="noopener noreferrer">
-  <div class="image-mat aurora"><img src="assets/images/aurora-grand.jpg" alt="Aurora Grandの豪華客船のカジノホール" loading="lazy" width="1280" height="720"></div>
-  <div class="project-copy"><div class="project-heading"><h3 id="project-7">Aurora Grand</h3><span class="open-mark" aria-hidden="true">↗</span></div><p>豪華客船のカジノを歩き回り、限定ジャンケンで遊べる3D箱庭。</p><div class="project-meta"><span>3D箱庭</span></div></div>
- </a><a aria-labelledby="project-8" class="project-card nanjming-card" href="https://nanjming-asobiba.info907366.chatgpt.site/" target="_blank" rel="noopener noreferrer">
-  <div class="image-mat nanjming"><img src="assets/images/nanjming.jpg" alt="なんJ民のあそびば" loading="lazy" width="1264" height="1950"></div>
-  <div class="project-copy"><div class="project-heading"><h3 id="project-8">なんJ民のあそびば</h3><span class="open-mark" aria-hidden="true">↗</span></div><p>AIが提案したものをそのままAIに実装させる実験</p><div class="project-meta"><span>AIの実験</span></div></div>
- </a><a aria-labelledby="project-10" class="project-card decision-card" href="https://decision-games-lab.info907366.chatgpt.site/" target="_blank" rel="noopener noreferrer">
-  <div class="image-mat decision"><img src="assets/images/decision-games.png" alt="意思決定ゲーム集のゲーム一覧画面" loading="lazy" width="1440" height="950"></div>
-  <div class="project-copy"><div class="project-heading"><h3 id="project-10">意思決定ゲーム集</h3><span class="open-mark" aria-hidden="true">↗</span></div><p>19のゲームを遊びながら、選択の結果を考える。</p><div class="project-meta"><span>意思決定</span><span>19題材</span></div></div>
- </a><a aria-labelledby="project-11" class="project-card miniarcade-card" href="https://mofumofu-mini-arcade.info907366.chatgpt.site" target="_blank" rel="noopener noreferrer">
-  <div class="image-mat miniarcade" aria-hidden="true"><span class="miniarcade-number">10</span><span class="miniarcade-label">種類の遊び</span><span class="miniarcade-note">20体の3Dマスコット</span></div>
-  <div class="project-copy"><div class="project-heading"><h3 id="project-11">もふもふ ちょいあそび</h3><span class="open-mark" aria-hidden="true">↗</span></div><p>20体の共通3Dマスコットと、1〜2操作で遊ぶ10種類のミニゲーム。</p><div class="project-meta"><span>ゲームごとのカメラ演出</span><span>ChatGPTログイン要</span></div></div>
-</a></div>
+ <div class="section-head"><h2 id="experiments-title">試作</h2><span class="count">7</span></div>
+ <div class="lab">
+  <ul class="lab-list">
+   <li><a aria-labelledby="project-9" class="lab-item" href="mofumofu/" target="_blank" rel="noopener noreferrer">
+    <div class="thumb"><img src="assets/images/mofumofu-garden.jpg" alt="もふもふのキャラが歩き回る広場" loading="lazy" width="1013" height="500"></div>
+    <div class="lab-text"><h3 id="project-9">もふもふ広場</h3><p>もふもふのキャラが歩き回り、混み合うとバトルする箱庭。</p><div class="lab-tags"><span>箱庭</span></div></div>
+    <svg class="lab-go" aria-hidden="true"><use href="#arrow"/></svg>
+   </a></li>
+   <li><a aria-labelledby="project-4" class="lab-item" href="https://nikaiai2025.github.io/gacha-simulator/" target="_blank" rel="noopener noreferrer">
+    <div class="thumb"><img src="assets/images/gacha.jpg" alt="ガチャ確率シミュレータ" loading="lazy" width="1265" height="712"></div>
+    <div class="lab-text"><h3 id="project-4">ガチャ確率<wbr>シミュレータ</h3><p>天井や確率アップも含めて、ガチャの当たり回数をグラフで確認。</p><div class="lab-tags"><span>ガチャ</span></div></div>
+    <svg class="lab-go" aria-hidden="true"><use href="#arrow"/></svg>
+   </a></li>
+   <li><a aria-labelledby="project-6" class="lab-item" href="https://discord.com/oauth2/authorize?client_id=1522262919054622730&amp;permissions=3072&amp;integration_type=0&amp;scope=bot+applications.commands" target="_blank" rel="noopener noreferrer">
+    <div class="thumb thumb-discord"><img src="assets/images/discord-symbol.svg" alt="eddi-keyword-notifier" loading="lazy"></div>
+    <div class="lab-text"><h3 id="project-6">eddi-keyword-notifier</h3><p>エッヂの新着スレをキーワードでDiscordに通知。</p><div class="lab-tags"><span>Discord</span></div></div>
+    <svg class="lab-go" aria-hidden="true"><use href="#arrow"/></svg>
+   </a></li>
+   <li><a aria-labelledby="project-7" class="lab-item" href="https://aurora-grand.info907366.chatgpt.site/" target="_blank" rel="noopener noreferrer">
+    <div class="thumb"><img src="assets/images/aurora-grand.jpg" alt="Aurora Grandの豪華客船のカジノホール" loading="lazy" width="1280" height="720"></div>
+    <div class="lab-text"><h3 id="project-7">Aurora Grand</h3><p>豪華客船のカジノを歩き回り、限定ジャンケンで遊べる3D箱庭。</p><div class="lab-tags"><span>3D箱庭</span></div></div>
+    <svg class="lab-go" aria-hidden="true"><use href="#arrow"/></svg>
+   </a></li>
+   <li><a aria-labelledby="project-8" class="lab-item" href="https://nanjming-asobiba.info907366.chatgpt.site/" target="_blank" rel="noopener noreferrer">
+    <div class="thumb thumb-top"><img src="assets/images/nanjming.jpg" alt="なんJ民のあそびば" loading="lazy" width="1264" height="1950"></div>
+    <div class="lab-text"><h3 id="project-8">なんJ民の<wbr>あそびば</h3><p>AIが提案したものをそのままAIに実装させる実験</p><div class="lab-tags"><span>AIの実験</span></div></div>
+    <svg class="lab-go" aria-hidden="true"><use href="#arrow"/></svg>
+   </a></li>
+   <li><a aria-labelledby="project-10" class="lab-item" href="https://decision-games-lab.info907366.chatgpt.site/" target="_blank" rel="noopener noreferrer">
+    <div class="thumb"><img src="assets/images/decision-games.png" alt="意思決定ゲーム集のゲーム一覧画面" loading="lazy" width="1440" height="950"></div>
+    <div class="lab-text"><h3 id="project-10">意思決定<wbr>ゲーム集</h3><p>19のゲームを遊びながら、選択の結果を考える。</p><div class="lab-tags"><span>意思決定</span><span>19題材</span></div></div>
+    <svg class="lab-go" aria-hidden="true"><use href="#arrow"/></svg>
+   </a></li>
+   <li><a aria-labelledby="project-11" class="lab-item" href="https://mofumofu-mini-arcade.info907366.chatgpt.site" target="_blank" rel="noopener noreferrer">
+    <div class="thumb thumb-arcade" aria-hidden="true"><div class="arcade"><span class="arcade-num">10</span><span class="arcade-label">種類の遊び</span><span class="arcade-note">20体の3Dマスコット</span></div></div>
+    <div class="lab-text"><h3 id="project-11">もふもふ ちょいあそび</h3><p>20体の共通3Dマスコットと、1〜2操作で遊ぶ10種類のミニゲーム。</p><div class="lab-tags"><span>ゲームごとのカメラ演出</span><span>ChatGPTログイン要</span></div></div>
+    <svg class="lab-go" aria-hidden="true"><use href="#arrow"/></svg>
+   </a></li>
+  </ul>
+ </div>
 </section>
 </main>
-<footer><span class="footer-mark" aria-hidden="true">🐾</span><span>シカの足跡</span><span class="footer-maker">つくった人：shika</span></footer>
-</div><script src="gallery.js?v=20261005-3"></script></body></html>
+<footer class="footer">
+ <div class="footer-row"><span class="footer-title"><svg aria-hidden="true"><use href="#hoof"/></svg>シカの足跡</span><span>つくった人：shika</span></div>
+</footer>
+</div>
+<script src="gallery.js?v=20261021-1"></script>
+</body></html>
