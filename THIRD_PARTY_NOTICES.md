@@ -20,4 +20,4 @@ The unused `assets/vendor/portfolio-template.css` is retained with its MIT licen
 
 ## Discord symbol
 
-The Discord symbol belongs to Discord Inc. Source: https://discord.com/branding . Used unchanged to identify the Discord platform for eddi-keyword-notifier. It is not the bot's own logo. Discord assets are not covered by the template's MIT license.
+The Discord symbol belongs to Discord Inc. Source: https://discord.com/branding . Used unchanged to identify the Discord notification feature of eddi. It is not the service's own logo. Discord assets are not covered by the template's MIT license.
